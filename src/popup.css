@@ -1,0 +1,10 @@
+/* replace with your css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.popup {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+}
