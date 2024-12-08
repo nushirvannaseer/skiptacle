@@ -1,3 +1,5 @@
+import { getElementByXpath } from "../utils";
+
 let skipIntroEnabled = false;
 let skipRecapEnabled = false;
 let cooldownPeriod = 10000;
@@ -22,13 +24,7 @@ chrome.storage.onChanged.addListener((changes) => {
 const documentObserver = new MutationObserver(() => {
   if (skipIntroEnabled) {
     const xpath = "//*[contains(text(),'Skip Intro')]";
-    const skipButton = document.evaluate(
-      xpath,
-      document,
-      null,
-      XPathResult.FIRST_ORDERED_NODE_TYPE,
-      null
-    ).singleNodeValue;
+    const skipButton = getElementByXpath(xpath);
 
     if (skipButton) {
       skipButton.click();
@@ -40,13 +36,7 @@ const documentObserver = new MutationObserver(() => {
   }
   if (skipRecapEnabled) {
     const xpath = "//*[contains(text(),'Skip Recap')]";
-    const skipButton = document.evaluate(
-      xpath,
-      document,
-      null,
-      XPathResult.FIRST_ORDERED_NODE_TYPE,
-      null
-    ).singleNodeValue;
+    const skipButton = getElementByXpath(xpath);
 
     if (skipButton) {
       skipButton.click();
