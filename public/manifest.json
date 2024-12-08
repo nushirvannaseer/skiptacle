@@ -1,9 +1,9 @@
 {
-  "name": "Enter your extension name here",
-  "description": "Enter your extension description here",
+  "name": "Skiptacle",
+  "description": "Level up your binge-watching game! Automatically skip intros and recaps on Netflix and Prime Video, so you can dive straight into the action. No clicks, no interruptions—just pure, seamless streaming bliss!",
   "version": "1.0.0",
   "manifest_version": 3,
-  "author": "<author_name>",
+  "author": "Nushirvan Naseer",
   "icons": {
     "16": "icons/16.png",
     "48": "icons/48.png",
