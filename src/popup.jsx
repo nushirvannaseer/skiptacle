@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { render } from "react-dom";
+import Switch from "./components/Switch";
 import "./popup.css";
 
 function Popup() {
@@ -34,21 +35,22 @@ function Popup() {
         Skiptacle
       </h1>
       <p className="p-10 text-center text-sm text-gray-400">
-        Skip the intros/recaps of any Netflix show or movie
+        Skip the intros/recaps of any Netflix/Amazon Prime show or movie
       </p>
-      <button
-        onClick={() => handleToggle("skipIntro")}
-        className="bg-blue-600 text-white p-2 rounded-md"
-      >
-        Skip Intro {settings.skipIntro ? "ON" : "OFF"}
-      </button>
-      <br />
-      <button
-        onClick={() => handleToggle("skipRecap")}
-        className="bg-blue-600 text-white p-2 rounded-md"
-      >
-        Skip Recap {settings.skipRecap ? "ON" : "OFF"}
-      </button>
+
+      <div className="space-y-4 flex flex-col">
+        <Switch
+          label="Skip Intro"
+          checked={settings.skipIntro}
+          onChange={() => handleToggle("skipIntro")}
+        />
+
+        <Switch
+          label="Skip Recap"
+          checked={settings.skipRecap}
+          onChange={() => handleToggle("skipRecap")}
+        />
+      </div>
     </div>
   );
 }

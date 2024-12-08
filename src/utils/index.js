@@ -1,4 +1,4 @@
-export const getElementByXpath = (xpath: string) => {
+export const getElementByXpath = (xpath) => {
   return document.evaluate(
     xpath,
     document,

@@ -19,7 +19,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["https://www.netflix.com/*", "https://www.primevideo.com/*"],
       "js": ["content.js"]
     }
   ]
