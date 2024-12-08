@@ -20,7 +20,7 @@ Tired of manually clicking the skip button for intros and recaps while binge-wat
 1. Clone the repository:
 
 ```sh
-git clone [your-repo-url]
+git clone https://github.com/nushirvan/skiptacle.git
 ```
 
 2. Navigate to the project directory:
