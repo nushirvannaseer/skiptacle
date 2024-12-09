@@ -32,8 +32,8 @@ cd skiptacle
 3. Install dependencies & compile code with webpack:
 
 ```sh
-yarn
-yarn run dev
+pnpm i
+pnpm dev
 ```
 
 ## File Structure
@@ -68,7 +68,7 @@ skiptacle
 
 ## How to Use
 
-1. Run `yarn dev` to generate the `dist` folder in the root directory
+1. Run `pnpm dev` to generate the `dist` folder in the root directory
 2. Open Chrome and navigate to `chrome://extensions`
 3. Enable "Developer mode" in the top right corner
 4. Click "Load Unpacked" and select the `dist` folder from the project directory
